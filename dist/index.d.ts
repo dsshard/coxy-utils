@@ -1,4 +1,4 @@
-export * from 'wait';
+export * from './wait';
 export * from './data/array-flatten';
 export * from './data/array-search-in-by-field';
 export * from './data/array-to-chunks';
