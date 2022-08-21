@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.searchArrayFilter = void 0;
 function searchArrayFilter(array, searchString, _fields) {
     if (!searchString) {
         return array;
@@ -10,4 +11,4 @@ function searchArrayFilter(array, searchString, _fields) {
         return fields.some((field) => !!encodeURI(String(field).toLowerCase()).match(reg));
     });
 }
-exports.default = searchArrayFilter;
+exports.searchArrayFilter = searchArrayFilter;

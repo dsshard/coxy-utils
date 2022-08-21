@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.uniqBy = void 0;
 function uniqBy(array, getter) {
     const result = [];
     const map = new Map();
@@ -12,4 +13,4 @@ function uniqBy(array, getter) {
     }
     return result;
 }
-exports.default = uniqBy;
+exports.uniqBy = uniqBy;

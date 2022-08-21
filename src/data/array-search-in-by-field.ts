@@ -1,4 +1,4 @@
-export default function searchArrayFilter (array: any[], searchString: string, _fields: any) {
+export function searchArrayFilter (array: any[], searchString: string, _fields: any) {
   if (!searchString) {
     return array
   }
