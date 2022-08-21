@@ -1,1 +1,1 @@
-export declare function toArray<T>(any: T): T[];
+export declare function toArray<T>(any: T | T[]): T[];

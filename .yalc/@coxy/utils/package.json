@@ -1,0 +1,12 @@
+{
+  "name": "@coxy/utils",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Steven Green <dsshard@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "yalcSig": "2cc1ec2a5caa36623622afe16676ba13"
+}
