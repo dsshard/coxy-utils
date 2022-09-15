@@ -8,6 +8,9 @@
   "scripts": {
     "build": "tsc"
   },
+  "peerDependencies": {
+    "react": ">=17"
+  },
   "devDependencies": {
     "@coxy/eslint-config": "1.0.1",
     "@types/node": "18.7.8",
