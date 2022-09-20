@@ -12,17 +12,17 @@
     "react": ">=17"
   },
   "devDependencies": {
-    "@coxy/eslint-config": "1.0.1",
+    "@coxy/eslint-config": "1.0.4",
     "@types/node": "18.7.8",
-    "@typescript-eslint/eslint-plugin": "5.33.1",
-    "@typescript-eslint/parser": "5.33.1",
+    "@typescript-eslint/eslint-plugin": "5.37.0",
+    "@typescript-eslint/parser": "5.37.0",
     "eslint": "8.22.0",
-    "eslint-config-standard": "16.0.3",
+    "eslint-config-standard": "17.0.0",
     "eslint-plugin-filename-rules": "1.2.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-n": "15.2.5",
+    "eslint-plugin-promise": "6.0.1",
     "ts-node": "10.9.1",
-    "typescript": "4.7.4"
+    "typescript": "4.8.3"
   }
 }
