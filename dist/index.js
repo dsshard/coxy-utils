@@ -28,8 +28,6 @@ __exportStar(require("./validators/is-valid-email"), exports);
 __exportStar(require("./validators/is-valid-number"), exports);
 __exportStar(require("./validators/is-number-in-range"), exports);
 __exportStar(require("./validators/is-positive-number"), exports);
-__exportStar(require("./use/use-search"), exports);
-__exportStar(require("./use/use-toggle"), exports);
 __exportStar(require("./strings/trim-by-size"), exports);
 __exportStar(require("./strings/pad"), exports);
 __exportStar(require("./strings/capitalize"), exports);
