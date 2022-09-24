@@ -13,7 +13,7 @@ export function useSearch <T> (wallets: T[], fields: Array<keyof T>): [(text: st
       setFilteredData(wallets)
       return
     }
-    const filtered = searchArrayFilter(wallets, text, fields)
+    const filtered = searchArrayFilter(wallets, text, fields as string[])
     setFilteredData(filtered)
     setIsSearch(!!trimmedText)
   }, [wallets])

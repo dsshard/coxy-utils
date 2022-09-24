@@ -1,5 +1,5 @@
 import { isValidNumber } from './is-valid-number'
 
-export function isPositiveNumber (value: string | number): boolean {
-  return isValidNumber(value) && value > 0
+export function isPositiveNumber (value: string): boolean {
+  return isValidNumber(value) && Number(value) > 0
 }
