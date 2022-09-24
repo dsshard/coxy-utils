@@ -1,4 +1,4 @@
-export function uniqBy (array: any[], getter: (item: any) => any) {
+export function uniqBy (array: any[], getter: (item) => string) {
   const result = []
   const map = new Map()
   for (const item of array) {
