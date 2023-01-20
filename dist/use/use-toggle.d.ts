@@ -1,1 +1,1 @@
-export declare function useToggle(defaultValue?: boolean): [boolean, () => void, () => void];
+export declare function useToggle(defaultValue?: boolean): [boolean, () => void, () => void, () => void];

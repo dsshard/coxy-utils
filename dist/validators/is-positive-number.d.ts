@@ -1,1 +1,1 @@
-export declare function isPositiveNumber(value: any): boolean;
+export declare function isPositiveNumber(value: string): boolean;

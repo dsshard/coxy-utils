@@ -6,6 +6,7 @@ function useToggle(defaultValue = false) {
     const [isVisible, setToggle] = (0, react_1.useState)(defaultValue);
     const open = (0, react_1.useCallback)(() => setToggle(true), []);
     const close = (0, react_1.useCallback)(() => setToggle(false), []);
-    return [isVisible, open, close];
+    const toggle = (0, react_1.useCallback)(() => setToggle(!isVisible), [isVisible]);
+    return [isVisible, open, close, toggle];
 }
 exports.useToggle = useToggle;

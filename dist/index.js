@@ -32,3 +32,8 @@ __exportStar(require("./strings/trim-by-size"), exports);
 __exportStar(require("./strings/pad"), exports);
 __exportStar(require("./strings/capitalize"), exports);
 __exportStar(require("./date/index"), exports);
+__exportStar(require("./data/merge-deep"), exports);
+__exportStar(require("./data/object-keys"), exports);
+__exportStar(require("./strings/to-hex"), exports);
+__exportStar(require("./strings/base64"), exports);
+__exportStar(require("./numbers/preformat-float"), exports);

@@ -1,1 +1,1 @@
-export declare function isValidNumber(value: any): boolean;
+export declare function isValidNumber(value: string): boolean;
