@@ -1,1 +1,1 @@
-export declare function useSearch<T>(wallets: T[], fields: Array<keyof T>): [(text: string) => void, T[], boolean];
+export declare function useSearch<T>(array: T[], fields: Array<keyof T>): [(text: string) => void, T[], boolean];

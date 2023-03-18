@@ -3,20 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.useSearch = void 0;
 const react_1 = require("react");
 const array_search_in_by_field_1 = require("../data/array-search-in-by-field");
-function useSearch(wallets, fields) {
-    const [filteredData, setFilteredData] = (0, react_1.useState)(wallets);
-    const [isSearch, setIsSearch] = (0, react_1.useState)(false);
+function useSearch(array, fields) {
+    const [searchText, setSearchText] = (0, react_1.useState)(null);
     const handleSearch = (0, react_1.useCallback)((text) => {
         const trimmedText = text ? text.trim() : text;
         if (!trimmedText) {
-            setIsSearch(false);
-            setFilteredData(wallets);
-            return;
+            setSearchText(null);
         }
-        const filtered = (0, array_search_in_by_field_1.searchArrayFilter)(wallets, text, fields);
-        setFilteredData(filtered);
-        setIsSearch(!!trimmedText);
-    }, [wallets]);
-    return [handleSearch, isSearch ? filteredData : wallets, isSearch];
+        else {
+            setSearchText(trimmedText);
+        }
+    }, [array]);
+    const filtered = searchText ? (0, array_search_in_by_field_1.searchArrayFilter)(array, searchText, fields) : array;
+    return [handleSearch, filtered, !!searchText];
 }
 exports.useSearch = useSearch;

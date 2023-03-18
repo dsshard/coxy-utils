@@ -2,21 +2,19 @@ import { useCallback, useState } from 'react'
 
 import { searchArrayFilter } from '../data/array-search-in-by-field'
 
-export function useSearch <T> (wallets: T[], fields: Array<keyof T>): [(text: string) => void, T[], boolean] {
-  const [filteredData, setFilteredData] = useState<T[]>(wallets)
-  const [isSearch, setIsSearch] = useState(false)
+export function useSearch <T> (array: T[], fields: Array<keyof T>): [(text: string) => void, T[], boolean] {
+  const [searchText, setSearchText] = useState<string | null>(null)
 
   const handleSearch = useCallback((text: string) => {
     const trimmedText = text ? text.trim() : text
     if (!trimmedText) {
-      setIsSearch(false)
-      setFilteredData(wallets)
-      return
+      setSearchText(null)
+    } else {
+      setSearchText(trimmedText)
     }
-    const filtered = searchArrayFilter(wallets, text, fields as string[])
-    setFilteredData(filtered)
-    setIsSearch(!!trimmedText)
-  }, [wallets])
+  }, [array])
 
-  return [handleSearch, isSearch ? filteredData : wallets, isSearch]
+  const filtered = searchText ? searchArrayFilter(array, searchText, fields as string[]) : array
+
+  return [handleSearch, filtered, !!searchText]
 }
