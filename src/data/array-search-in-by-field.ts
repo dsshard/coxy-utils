@@ -1,6 +1,6 @@
 type FieldExtractor = (sub: string) => string
 
-export function searchArrayFilter (array: any[], searchString: string, _fields: string[] | FieldExtractor) {
+export function searchArrayFilter(array: any[], searchString: string, _fields: string[] | FieldExtractor) {
   if (!searchString) {
     return array
   }
@@ -11,4 +11,3 @@ export function searchArrayFilter (array: any[], searchString: string, _fields: 
     return fields.some((field) => !!encodeURI(String(field).toLowerCase()).match(reg))
   })
 }
-

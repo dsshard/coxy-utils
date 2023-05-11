@@ -13,6 +13,6 @@ function preformatFloat(float) {
     if (posFS === -1) {
         return float.replace(/,/g, '.');
     }
-    return ((posC < posFS) ? (float.replace(/,/g, '')) : (float.replace(/\./g, '').replace(',', '.')));
+    return posC < posFS ? float.replace(/,/g, '') : float.replace(/\./g, '').replace(',', '.');
 }
 exports.preformatFloat = preformatFloat;

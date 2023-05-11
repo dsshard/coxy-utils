@@ -1,4 +1,4 @@
-export function preformatFloat (float: string) {
+export function preformatFloat(float: string) {
   if (!float) {
     return ''
   }
@@ -20,5 +20,5 @@ export function preformatFloat (float: string) {
   }
 
   // Uses both commas and full stops—ensure correct order and remove 1000s separators.
-  return ((posC < posFS) ? (float.replace(/,/g, '')) : (float.replace(/\./g, '').replace(',', '.')))
+  return posC < posFS ? float.replace(/,/g, '') : float.replace(/\./g, '').replace(',', '.')
 }

@@ -4,7 +4,20 @@ exports.dateAddDays = exports.dateFormat = void 0;
 const pad_1 = require("../strings/pad");
 const capitalize_1 = require("../strings/capitalize");
 const monthNamesShort = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
-const monthNamesLong = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+const monthNamesLong = [
+    'january',
+    'february',
+    'march',
+    'april',
+    'may',
+    'june',
+    'july',
+    'august',
+    'september',
+    'october',
+    'november',
+    'december',
+];
 function dateFormat(template, date) {
     const specs = 'hh:TT:tt:MMMM:Mmmm:MMM:Mmm:YYYY:MM:DD:HH:mm:ss'.split(':');
     const d = new Date(date || Date.now());

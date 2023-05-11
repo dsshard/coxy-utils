@@ -1,7 +1,4 @@
-export const debounce = <F extends (...args: Parameters<F>) => ReturnType<F>>(
-  func: F,
-  waitFor: number
-) => {
+export const debounce = <F extends (...args: Parameters<F>) => ReturnType<F>>(func: F, waitFor: number) => {
   let timeout: ReturnType<typeof setTimeout>
   return (...args: Parameters<F>) => {
     clearTimeout(timeout)

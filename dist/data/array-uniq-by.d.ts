@@ -1,1 +1,1 @@
-export declare function uniqBy(array: any[], getter: (item: any) => string): any[];
+export declare function uniqBy<T>(array: T[], getter: (item: T) => string): any[];

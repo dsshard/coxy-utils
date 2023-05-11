@@ -1,8 +1,8 @@
-export function isObject (item) {
-  return (item && typeof item === 'object' && !Array.isArray(item))
+export function isObject(item): boolean {
+  return item && typeof item === 'object' && !Array.isArray(item)
 }
 
-export function mergeDeep (target, source) {
+export function mergeDeep(target, source) {
   const output = Object.assign({}, target)
   if (isObject(target) && isObject(source)) {
     Object.keys(source).forEach((key) => {
