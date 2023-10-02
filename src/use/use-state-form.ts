@@ -42,7 +42,7 @@ export const useStateForm = <T>(initialValue?: Partial<T>) => {
 
   const setValue = useCallback(
     (key: ObjectDotNotation<T>, val?: unknown) => {
-      if (val) {
+      if (val !== undefined) {
         setValuesByKey((data) => {
           const res = setterObjectValue(data, key, val)
           return { ...res }
