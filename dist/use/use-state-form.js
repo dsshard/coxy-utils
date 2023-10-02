@@ -22,7 +22,7 @@ const useStateForm = (initialValue) => {
         setValuesByKey(() => initial);
     }, []);
     const setValue = (0, react_1.useCallback)((key, val) => {
-        if (val) {
+        if (val !== undefined) {
             setValuesByKey((data) => {
                 const res = setterObjectValue(data, key, val);
                 return Object.assign({}, res);
