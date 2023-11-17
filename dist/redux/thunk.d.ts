@@ -1,5 +1,4 @@
-import { AnyAction, Dispatch } from '@reduxjs/toolkit';
 export declare const thunkMiddleware: ({ dispatch, getState }: {
-    dispatch: Dispatch;
+    dispatch: any;
     getState: any;
-}) => (next: (action: AnyAction) => void) => (action: (dispatch: Dispatch, state: any) => void) => void;
+}) => (next: (action: any) => void) => (action: (dispatch: any, state: any) => void) => void;

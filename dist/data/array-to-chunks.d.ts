@@ -1,1 +1,1 @@
-export declare function arrayToChunks(arr: any[], len: number): any[];
+export declare function arrayToChunks<T>(arr: T[], len: number): T[][];

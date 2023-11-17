@@ -10,12 +10,14 @@
   },
   "optionalDependencies": {
     "@reduxjs/toolkit": ">=1.9",
+    "redux": ">=4",
     "react": ">=18"
   },
   "devDependencies": {
     "@coxy/eslint-config": "1.0.6",
     "@types/node": "18.8.3",
     "@types/react": "18.0.21",
+    "@types/redux": "3.6.0",
     "@typescript-eslint/eslint-plugin": "5.*",
     "@typescript-eslint/parser": "5.*",
     "eslint": "8.25.0",

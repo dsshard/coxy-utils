@@ -1,3 +1,3 @@
-declare type FieldExtractor = (sub: string) => string;
-export declare function searchArrayFilter(array: any[], searchString: string, _fields: string[] | FieldExtractor): any[];
+declare type FieldExtractor<T> = (sub: T) => string;
+export declare function searchArrayFilter<T>(array: T[], searchString: string, _fields: (keyof T)[] | FieldExtractor<T>): T[];
 export {};

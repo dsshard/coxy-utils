@@ -17,7 +17,7 @@ export function useSearch<T>(array: T[], fields: Array<keyof T>): [(text: string
     [array],
   )
 
-  const filtered = searchText ? searchArrayFilter(array, searchText, fields as string[]) : array
+  const filtered = searchText ? searchArrayFilter(array, searchText, fields) : array
 
   return [handleSearch, filtered, !!searchText]
 }
