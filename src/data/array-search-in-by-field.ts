@@ -1,11 +1,11 @@
-type FieldExtractor = (sub: string) => string
+type FieldExtractor<T> = (sub: T) => string
 
-export function searchArrayFilter(array: any[], searchString: string, _fields: string[] | FieldExtractor) {
+export function searchArrayFilter<T>(array: T[], searchString: string, _fields: (keyof T)[] | FieldExtractor<T>) {
   if (!searchString) {
     return array
   }
   const reg = new RegExp(encodeURI(String(searchString).toLowerCase()), 'ig')
-  return array.filter((sub: string) => {
+  return array.filter((sub: T) => {
     const fields = (typeof _fields === 'function' ? _fields(sub) : _fields.map((field) => sub[field])) as string[]
 
     return fields.some((field) => !!encodeURI(String(field).toLowerCase()).match(reg))

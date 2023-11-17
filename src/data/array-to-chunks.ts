@@ -1,4 +1,4 @@
-export function arrayToChunks(arr: any[], len: number): any[] {
+export function arrayToChunks<T>(arr: T[], len: number): T[][] {
   const chunks = []
   let i = 0
   const n = arr.length
