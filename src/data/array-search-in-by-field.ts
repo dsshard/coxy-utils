@@ -1,6 +1,6 @@
 type FieldExtractor<T> = (sub: T) => string
 
-function escapeRegex(string: string) {
+export function escapeRegex(string: string) {
   const reRegExpChar = /[\\^$.*+?()[\]{}|]/g
   const reHasRegExpChar = RegExp(reRegExpChar.source)
   return string && reHasRegExpChar.test(string) ? string.replace(reRegExpChar, '\\$&') : string || ''
