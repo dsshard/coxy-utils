@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.searchArrayFilter = void 0;
+exports.searchArrayFilter = exports.escapeRegex = void 0;
 function escapeRegex(string) {
     const reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
     const reHasRegExpChar = RegExp(reRegExpChar.source);
     return string && reHasRegExpChar.test(string) ? string.replace(reRegExpChar, '\\$&') : string || '';
 }
+exports.escapeRegex = escapeRegex;
 function searchArrayFilter(array, searchString, _fields) {
     if (!searchString) {
         return array;
