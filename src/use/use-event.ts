@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef } from 'react'
 // type Fn = (...args: unknown[]) => any
 // type ReturnUseEvent<T extends Fn> = (...args: Parameters<T>) => ReturnType<T>
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 type AnyFunction = (...args: any[]) => any
 
 // eslint-disable-next-line @typescript-eslint/ban-types

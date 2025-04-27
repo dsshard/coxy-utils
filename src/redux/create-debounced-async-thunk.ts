@@ -1,7 +1,7 @@
 // based on:
 // https://stackoverflow.com/questions/68281810/how-to-debounce-createasyncthunk-from-redux-toolkit
 
-import { createAsyncThunk, AsyncThunkPayloadCreator, AsyncThunk } from '@reduxjs/toolkit'
+import { type AsyncThunk, type AsyncThunkPayloadCreator, createAsyncThunk } from '@reduxjs/toolkit'
 
 type TimeoutId = ReturnType<typeof setTimeout>
 

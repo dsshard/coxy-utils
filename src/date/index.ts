@@ -1,5 +1,5 @@
-import { pad } from '../strings/pad'
 import { capitalize } from '../strings/capitalize'
+import { pad } from '../strings/pad'
 
 const monthNamesShort = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 const monthNamesLong = [

@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@coxy/utils": {
-      "signature": "2cc1ec2a5caa36623622afe16676ba13",
-      "file": true
-    }
-  }
-}
