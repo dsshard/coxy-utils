@@ -1,0 +1,2 @@
+function s(e){let t=/[\\^$.*+?()[\]{}|]/g,r=RegExp(t.source);return e&&r.test(e)?e.replace(t,"\\$&"):e||""}function p(e,t,r){if(!t)return e;let c=new RegExp(s(t).toLowerCase(),"ig");return e.filter(n=>(typeof r=="function"?r(n):r.map(o=>n[o])).some(o=>!!encodeURI(String(o).toLowerCase()).match(c)))}export{s as escapeRegex,p as searchArrayFilter};
+//# sourceMappingURL=array-search-in-by-field.mjs.map

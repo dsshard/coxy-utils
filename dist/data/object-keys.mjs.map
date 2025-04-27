@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/data/object-keys.ts"],"sourcesContent":["export const objectKeys = <T>(obj: T): Array<keyof T> => Object.keys(obj as object) as Array<keyof typeof obj>\n"],"mappings":"AAAO,IAAMA,EAAiBC,GAA2B,OAAO,KAAKA,CAAa","names":["objectKeys","obj"]}

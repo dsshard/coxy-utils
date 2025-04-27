@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/strings/trim.ts"],"sourcesContent":["export const trim = (str: string | number | null | undefined): string => {\n  if (!str) return ''\n  return String(str).trim()\n}\n"],"mappings":"AAAO,IAAMA,EAAQC,GACdA,EACE,OAAOA,CAAG,EAAE,KAAK,EADP","names":["trim","str"]}

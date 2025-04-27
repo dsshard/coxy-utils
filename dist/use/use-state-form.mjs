@@ -1,0 +1,2 @@
+import{useCallback as O,useState as d}from"react";function i(t,n,s){let e=typeof n=="string"?n.split("."):n,r=e.shift();return e.length===0?(t[r]=s,t):(!t[r]===void 0&&(t[r]={}),i(t[r],e,s),t)}var R=t=>{let n=t||{},[s,e]=d(n),r=O(()=>{e(()=>n)},[]),f=O((a,c)=>{if(c!==void 0){e(o=>({...i(o,a,c)}));return}return o=>{e(u=>({...i(u,a,o)}))}},[s]);return[s,f,r]};export{R as useStateForm};
+//# sourceMappingURL=use-state-form.mjs.map

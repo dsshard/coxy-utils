@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/strings/pad.ts"],"sourcesContent":["export function pad(num: string | number, size = 2) {\n  let n = String(num)\n  while (n.length < size) n = `0${n}`\n  return n\n}\n"],"mappings":"AAAO,SAASA,EAAIC,EAAsBC,EAAO,EAAG,CAClD,IAAI,EAAI,OAAOD,CAAG,EAClB,KAAO,EAAE,OAASC,GAAM,EAAI,IAAI,CAAC,GACjC,OAAO,CACT","names":["pad","num","size"]}

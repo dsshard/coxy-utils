@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/strings/trim-by-size.ts"],"sourcesContent":["export function trimBySize(str: string, max: number): string {\n  if (!str) return str\n  return str.length > max ? str.substring(0, max) : str\n}\n"],"mappings":"AAAO,SAASA,EAAWC,EAAaC,EAAqB,CAC3D,OAAKD,IACEA,EAAI,OAASC,EAAMD,EAAI,UAAU,EAAGC,CAAG,EAAID,EACpD","names":["trimBySize","str","max"]}

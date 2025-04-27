@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/strings/capitalize.ts"],"sourcesContent":["export function capitalize(string: string) {\n  return string.charAt(0).toUpperCase() + string.slice(1)\n}\n"],"mappings":"AAAO,SAASA,EAAWC,EAAgB,CACzC,OAAOA,EAAO,OAAO,CAAC,EAAE,YAAY,EAAIA,EAAO,MAAM,CAAC,CACxD","names":["capitalize","string"]}

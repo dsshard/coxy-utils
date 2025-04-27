@@ -1,0 +1,2 @@
+import{useCallback as o,useEffect as s,useRef as u}from"react";function f(n){let e=u(n);return s(()=>{e.current=n}),o((...t)=>{let r=e.current;return r(...t)},[])}export{f as useEvent};
+//# sourceMappingURL=use-event.mjs.map

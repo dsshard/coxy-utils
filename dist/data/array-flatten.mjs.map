@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/data/array-flatten.ts"],"sourcesContent":["export function arrayFlatten<T>(arr: T[]): T[] {\n  return arr.flat(Number.POSITIVE_INFINITY) as T[]\n}\n"],"mappings":"AAAO,SAASA,EAAgBC,EAAe,CAC7C,OAAOA,EAAI,KAAK,OAAO,iBAAiB,CAC1C","names":["arrayFlatten","arr"]}

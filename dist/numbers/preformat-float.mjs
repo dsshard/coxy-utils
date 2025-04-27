@@ -1,0 +1,2 @@
+function p(e){if(!e)return"";let r=e.indexOf(",");if(r===-1)return e;let n=e.indexOf(".");return n===-1?e.replace(/,/g,"."):r<n?e.replace(/,/g,""):e.replace(/\./g,"").replace(",",".")}export{p as preformatFloat};
+//# sourceMappingURL=preformat-float.mjs.map

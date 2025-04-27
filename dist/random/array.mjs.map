@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/random/array.ts"],"sourcesContent":["export const randomFromArray = <T>(items: T[]): T => items[Math.floor(Math.random() * items.length)]\n"],"mappings":"AAAO,IAAMA,EAAsBC,GAAkBA,EAAM,KAAK,MAAM,KAAK,OAAO,EAAIA,EAAM,MAAM,CAAC","names":["randomFromArray","items"]}

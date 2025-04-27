@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/wait.ts"],"sourcesContent":["export async function wait(time: number): Promise<null> {\n  return new Promise((resolve) => setTimeout(() => resolve(null), time))\n}\n"],"mappings":"AAAA,eAAsBA,EAAKC,EAA6B,CACtD,OAAO,IAAI,QAASC,GAAY,WAAW,IAAMA,EAAQ,IAAI,EAAGD,CAAI,CAAC,CACvE","names":["wait","time","resolve"]}

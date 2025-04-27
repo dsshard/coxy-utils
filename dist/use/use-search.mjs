@@ -1,0 +1,2 @@
+import{useCallback as u,useState as p}from"react";function l(e){let r=/[\\^$.*+?()[\]{}|]/g,t=RegExp(r.source);return e&&t.test(e)?e.replace(r,"\\$&"):e||""}function a(e,r,t){if(!r)return e;let n=new RegExp(l(r).toLowerCase(),"ig");return e.filter(s=>(typeof t=="function"?t(s):t.map(o=>s[o])).some(o=>!!encodeURI(String(o).toLowerCase()).match(n)))}function x(e,r){let[t,n]=p(null),s=u(o=>{let i=o&&o.trim();n(i||null)},[e]),c=t?a(e,t,r):e;return[s,c,!!t]}export{x as useSearch};
+//# sourceMappingURL=use-search.mjs.map

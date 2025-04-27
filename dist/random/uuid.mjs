@@ -1,0 +1,2 @@
+var t=()=>Math.floor((1+Math.random())*65536).toString(16).substring(1);function r(n=100){return`${t()+t()}-${t()}-${t()}-${t()}-${t()}${t()}${t()}`.slice(0,n)}export{r as uuid};
+//# sourceMappingURL=uuid.mjs.map

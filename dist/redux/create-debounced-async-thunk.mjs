@@ -1,0 +1,2 @@
+import{createAsyncThunk as T}from"@reduxjs/toolkit";var l=(r,o,a)=>{let{maxWait:i=0,leading:s=!1}=o??{},n=0,t=0,e,u=()=>{clearTimeout(t),t=0,e&&(e(!0),e=void 0)},d=()=>{e&&(e(!1),e=void 0)};return T(r,a,{condition(){let m=s&&!n;return clearTimeout(n),n=setTimeout(()=>{u(),n=0},o.wait),m?!0:(d(),i&&!t&&(t=setTimeout(u,i)),new Promise(c=>{e=c}))}})},y=r=>r?.name==="ConditionError",f=l;export{f as default,y as isConditionError};
+//# sourceMappingURL=create-debounced-async-thunk.mjs.map

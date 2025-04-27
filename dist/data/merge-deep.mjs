@@ -1,0 +1,2 @@
+function f(e){return e&&typeof e=="object"&&!Array.isArray(e)}function o(e,i){let t=Object.assign({},e);if(f(e)&&f(i))for(let n of Object.keys(i))f(i[n])?n in e?t[n]=o(e[n],i[n]):Object.assign(t,{[n]:i[n]}):Object.assign(t,{[n]:i[n]});return t}export{f as isObject,o as mergeDeep};
+//# sourceMappingURL=merge-deep.mjs.map

@@ -1,0 +1,2 @@
+function r(a){var d=function(e){var i=e.dispatch,o=e.getState;return function(c){return function(t){return typeof t=="function"?t(i,o,a):c(t)}}};return d}var n=r();n.withExtraArgument=r;var u=n;var p=u;export{p as thunkMiddleware};
+//# sourceMappingURL=thunk.mjs.map

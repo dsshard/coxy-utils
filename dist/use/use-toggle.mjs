@@ -1,0 +1,2 @@
+import{useCallback as s,useState as c}from"react";function g(t=!1){let[o,e]=c(t),l=s(()=>e(!0),[]),n=s(()=>e(!1),[]),i=s(()=>e(!o),[o]);return[o,l,n,i]}export{g as useToggle};
+//# sourceMappingURL=use-toggle.mjs.map

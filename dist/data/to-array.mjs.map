@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/data/to-array.ts"],"sourcesContent":["export function toArray<T>(any: T | T[]): T[] {\n  return Array.isArray(any) ? any : [any]\n}\n"],"mappings":"AAAO,SAASA,EAAWC,EAAmB,CAC5C,OAAO,MAAM,QAAQA,CAAG,EAAIA,EAAM,CAACA,CAAG,CACxC","names":["toArray","any"]}

@@ -1,0 +1,2 @@
+var t=e=>{try{return btoa(encodeURIComponent(e||""))}catch{return""}},o=e=>{try{return decodeURIComponent(atob(e||""))}catch{return""}};export{o as decode64,t as encode64};
+//# sourceMappingURL=base64.mjs.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/random/number.ts"],"sourcesContent":["export function randomNumber(min: number, max: number): number {\n  return Math.floor(Math.random() * (max - min + 1)) + min\n}\n"],"mappings":"AAAO,SAASA,EAAaC,EAAaC,EAAqB,CAC7D,OAAO,KAAK,MAAM,KAAK,OAAO,GAAKA,EAAMD,EAAM,EAAE,EAAIA,CACvD","names":["randomNumber","min","max"]}
